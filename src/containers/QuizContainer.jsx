@@ -35,7 +35,11 @@ function QuizContainer() {
     }
     console.log(`score: ${score}`);
     console.log(`selectedAnswer: ${selectedAnswer}`);
-    setCurrentQUestionIndex(currentQuestionIndex + 1);
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQUestionIndex(currentQuestionIndex + 1);
+    } else {
+      console.log("you reached the end");
+    }
   };
 
   return (
