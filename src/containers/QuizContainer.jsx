@@ -33,6 +33,7 @@ function QuizContainer() {
     if (selectedAnswer == question_answer) {
       setScore(score + 1);
     }
+    console.log(`score: ${score}`);
   };
   return (
     <>
