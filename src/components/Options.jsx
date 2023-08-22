@@ -8,6 +8,12 @@
 
 // - **handleAnswerSelect:** A function passed from the `Question` component that triggers when the user selects an answer.
 
-function Options ({options, handleAnswerSelect}) {
-    
+function Options({ options, handleAnswerSelect }) {
+  return (
+    <>
+      <h1>Options should go here</h1>
+    </>
+  );
 }
+
+export default Options;
