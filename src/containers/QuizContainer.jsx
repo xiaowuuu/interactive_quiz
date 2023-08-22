@@ -35,9 +35,6 @@ function QuizContainer() {
     }
     console.log(`score: ${score}`);
     console.log(`selectedAnswer: ${selectedAnswer}`);
-  };
-
-  const nextQuestion = () => {
     setCurrentQUestionIndex(currentQuestionIndex + 1);
   };
 
@@ -49,7 +46,6 @@ function QuizContainer() {
         options={options}
         handleAnswerSelect={handleAnswerSelect}
       />
-      <button onClick={nextQuestion}>Next</button>
     </>
   );
 }
