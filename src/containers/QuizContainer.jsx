@@ -34,6 +34,7 @@ function QuizContainer() {
       setScore(score + 1);
     }
     console.log(`score: ${score}`);
+    console.log(`selectedAnswer: ${selectedAnswer}`);
   };
   return (
     <>
