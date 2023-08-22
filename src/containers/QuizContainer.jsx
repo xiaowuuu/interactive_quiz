@@ -38,6 +38,7 @@ function QuizContainer() {
   };
   return (
     <>
+      <h1>Score: {score}</h1>
       <Question
         question={question}
         options={options}
