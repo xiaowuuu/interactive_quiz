@@ -9,10 +9,12 @@
 // - **options:** An array of possible answer options for the question.
 
 // - **handleAnswerSelect:** A function passed from the `Quiz` component that handles the user's answer selection.
-function Question ({ question, options, handleAnswerSelect}) {
-    return (
-        <>
-        <Options handleAnswerSelect={handleAnswerSelect}/>
-        </>
-    )
+function Question({ question, options, handleAnswerSelect }) {
+  return (
+    <>
+      <Options handleAnswerSelect={handleAnswerSelect} />
+    </>
+  );
 }
+
+export default Question;
