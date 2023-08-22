@@ -31,18 +31,17 @@ function QuizContainer() {
 
     const handleAnswerSelect = (selectedAnswer) => {
         const question_answer = question.answer;
+        const nextQuestionIndex = currentQuestionIndex + 1;
+        setCurrentQUestionIndex(nextQuestionIndex);
         if (selectedAnswer == question_answer) {
             setScore(score + 1);
         }
         console.log(`score: ${score}`);
         console.log(`selectedAnswer: ${selectedAnswer}`);
-        if (currentQuestionIndex < questions.length - 1) {
-            setCurrentQUestionIndex(currentQuestionIndex + 1);
+        if (nextQuestionIndex < questions.length) {
+            setCurrentQUestionIndex(nextQuestionIndex);
         } else {
             alert(`Your final score is ${score}`);
-                
-            
-            
         }
     };
 
